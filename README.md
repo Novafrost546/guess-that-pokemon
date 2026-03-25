@@ -4,7 +4,6 @@ A browser-based Pokemon guessing game powered by [PokeAPI](https://pokeapi.co/).
 
 ## Features
 
-- Random Pokemon loading from the API
 - Gen V black/white sprite preference with fallback behavior
 - Difficulty modes:
   - Easy: 3 attempts
