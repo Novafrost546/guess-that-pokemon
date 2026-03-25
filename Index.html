@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess That Pokemon</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="card">
+        <h1>Guess That Pokemon</h1>
+        <p class="sub">Guess the hidden Pokemon up to Generation 9.</p>
+
+        <div class="top-row">
+            <span class="score">Score: <span id="score">0</span></span>
+            <label for="difficultySelect">Difficulty</label>
+            <select id="difficultySelect" aria-label="Select difficulty">
+                <option value="easy">Easy (3 attempts)</option>
+                <option value="medium">Medium (2 attempts)</option>
+                <option value="hard">Hard (1 attempt)</option>
+            </select>
+            <button id="loadBtn" type="button">Load Pokemon</button>
+        </div>
+
+        <div class="pokemon-wrap">
+            <img id="pokemonImg" alt="Hidden Pokemon silhouette">
+        </div>
+
+        <div class="controls">
+            <input id="guessInput" type="text" placeholder="Enter Pokemon name (e.g. pikachu)">
+            <button id="submitBtn" type="button">Submit Guess</button>
+            <button id="nextBtn" type="button" disabled>Next Round</button>
+        </div>
+
+        <p id="status"></p>
+        <p id="hint"></p>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
